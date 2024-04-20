@@ -1,0 +1,100 @@
+/* App.css */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Logo styles */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px; 
+}
+
+/* Navigation bar styles */
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.navigation-link {
+  display: inline-block;
+  margin-left: 10px; 
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-link:hover {
+  color: #4CAF50; 
+}
+
+/* Main content styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; 
+}
+
+.title{
+  margin-top: 50px; 
+  font-size: 22px;
+}
+
+.card {
+  width: 80%;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Columns styles */
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.column h5 {
+  margin-bottom: 10px;
+}
+
+.column p {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #B0B0B0;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
