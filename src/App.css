@@ -152,3 +152,8 @@
   justify-content: center; /* Center the icons */
   margin-top: 20px;
 }
+
+.copyright{
+  margin-top: 20px;
+  font-size: 14px;
+}

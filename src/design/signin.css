@@ -1,10 +1,11 @@
 .signin-container {
-    max-width: 30%;
+    max-width: 35%;
     margin: 100px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
   }
   
   h2 {
@@ -26,4 +27,7 @@
     color: #f00;
     margin-bottom: 15px;
   }
-  
+
+  .signin-container p{
+    font-size: 14px;
+  }  

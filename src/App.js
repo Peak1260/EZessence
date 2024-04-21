@@ -34,7 +34,7 @@ function NavigationBar() {
     <nav className="navigation">
       <Link to="/shop" className="navigation-link">Shop</Link>
       <Link to="/signin" className="navigation-link">Sign in</Link>
-      <Link to="/cart" className="navigation-link"><img src = "./images/cart_icon.png" alt = "cart" style={{ width: '20px' }}></img>Cart</Link>
+      <Link to="/cart" className="navigation-link"><img src="./images/cart_icon.png" alt="cart" style={{ width: '20px' }}></img>Cart</Link>
     </nav>
   );
 }
@@ -101,9 +101,12 @@ function Home() {
           <p>Phone: +1(510)513-5593</p>
         </div>
         <div className="icon">
-          <img src = "./images/instagram_icon.png" alt = "instagram"></img>
-          <img src = "./images/whatsapp_icon.png" alt = "whatsapp"></img>
-          <img src = "./images/pinterest_icon.png" alt = "pinterest"></img>
+          <img src="./images/instagram_icon.png" alt="instagram"></img>
+          <img src="./images/whatsapp_icon.png" alt="whatsapp"></img>
+          <img src="./images/pinterest_icon.png" alt="pinterest"></img>
+        </div>
+        <div className="copyright">
+          <p>Copyright @ 2024, EZessence - All Rights Reserved</p>
         </div>
       </footer>
     </div>
