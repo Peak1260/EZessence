@@ -16,7 +16,7 @@ function App() {
 
         {/* Navigation */}
         <NavigationBar />
-        
+
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,9 +32,9 @@ function App() {
 function NavigationBar() {
   return (
     <nav className="navigation">
-          <Link to="/shop" className="navigation-link">Shop</Link>
-          <Link to="/signin" className="navigation-link">Sign in</Link>
-          <Link to="/cart" className="navigation-link">Cart</Link>
+      <Link to="/shop" className="navigation-link">Shop</Link>
+      <Link to="/signin" className="navigation-link">Sign in</Link>
+      <Link to="/cart" className="navigation-link"><img src = "./images/cart_icon.png" alt = "cart" style={{ width: '20px' }}></img>Cart</Link>
     </nav>
   );
 }
@@ -44,12 +44,15 @@ function Home() {
     <div className="content">
       <img src="./images/mainimage.png" alt="Main" />
       <div className="title">
-      <h1>Welcome to EZessence</h1>
+        <h1>Welcome To EZessence</h1>
       </div>
       <div className="card">
         <p>At EZessence, we are a team of dedicated professionals who specialize in finding the highest quality products. Our goal is to offer a range of services to ensure our clients make informed decisions about their purchases. We use a wide variety of tools and techniques to identify and secure the best deals without sacrificing quality. We are always looking for new opportunities to expand our product offerings.</p>
         <br></br>
         <p>The delivery will vary depending on the product and the delivery location, but we ensure you that everything will be sent in a timely manner. Feel free to contact us about any questions or if the delivered item is damaged or the wrong product.</p>
+      </div>
+      <div className="title2">
+        <h3>Not Just Another Online Store</h3>
       </div>
       {/* Four columns */}
       <div className="columns-container">
@@ -74,12 +77,33 @@ function Home() {
           <p>We offer a range of seamless payment options to make it easy for our customers by accepting all major credit/debit cards.</p>
         </div>
       </div>
+      <div className="title3">
+        <div className="side-image">
+          {/* Image is on the left side */}
+          <img
+            src="https://ezessence.com/wp-content/uploads/2023/09/pexels-photo-3735627-1024x683.jpeg"
+            alt="Side"
+          />
+        </div>
+
+        <div className="title3-text">
+          {/* Text content is on the right side, with header on top and paragraph below */}
+          <h6>FREE DELIVERY WITH ORDERS OVER $80</h6>
+          <h3>Delivered Straight To Your Door</h3>
+          <p>The delivery will vary depending on the product and the delivery location, but we ensure you that everything will be sent in a timely manner. Feel free to contact us about any questions or if the delivered item is damaged or the wrong product.</p>
+        </div>
+      </div>
       {/* Footer */}
       <footer className="footer">
         <div className="contact-info">
           <h3>Contact Us</h3>
           <p>Email: ezessence16@gmail.com</p>
           <p>Phone: +1(510)513-5593</p>
+        </div>
+        <div className="icon">
+          <img src = "./images/instagram_icon.png" alt = "instagram"></img>
+          <img src = "./images/whatsapp_icon.png" alt = "whatsapp"></img>
+          <img src = "./images/pinterest_icon.png" alt = "pinterest"></img>
         </div>
       </footer>
     </div>

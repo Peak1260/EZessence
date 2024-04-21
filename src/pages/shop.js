@@ -24,7 +24,7 @@ const products = [
 // Product component
 const Product = ({ id, name, price, image }) => (
   <div className="product">
-     <img src={image} alt={name} />
+    <img src={image} alt={name} />
     <h3>{name}</h3>
     <p>${price}</p>
   </div>
@@ -33,15 +33,25 @@ const Product = ({ id, name, price, image }) => (
 // Shop component
 function Shop() {
   return (
-    <div className="shop">
-      <h1>Shop Our Exclusive Deals</h1>
-      <div className="products">
-        {products.map(product => (
-          <Product key={product.id} {...product} />
-        ))}
+    <div className="shop-page">
+      <div className="header">
+        <div className="header-content">
+          <h1>Shop Our Exclusive Deals</h1>
+          <p>Bringing the best for less!</p>
+        </div>
+        <div className="header-image">
+          <img src="https://personalfinancebythebook.com/wp-content/uploads/family-clothing.png" alt="Shop Header" />
+        </div>
+      </div>
+      <div className="products-section">
+        <div className="products">
+          {products.map(product => (
+            <Product key={product.id} {...product} />
+          ))}
+        </div>
       </div>
     </div>
   );
 }
-  
+
 export default Shop;

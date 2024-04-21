@@ -10,7 +10,7 @@
 /* Logo styles */
 .logo {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 30px;
   width: 200px; 
 }
@@ -19,11 +19,10 @@
 .navigation {
   display: flex;
   justify-content: flex-end;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-right: 30px;
   font-size: 16px;
   font-weight: bold;
-  color: black;
 }
 
 .navigation-link {
@@ -46,21 +45,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px; 
+  margin-top: 20px; 
+  color: black;
 }
 
 .title{
   margin-top: 50px; 
-  font-size: 22px;
+  font-size: 32px;
 }
 
 .card {
   width: 80%;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 120px;
   background-color: #f0f0f0;
   border-radius: 10px;
+}
+
+.title2{
+  color: black;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 /* Columns styles */
@@ -86,15 +92,63 @@
   margin-bottom: 20px;
 }
 
+.title3 {
+  margin-top: 50px;
+  display: flex; /* Use flex layout for horizontal alignment */
+  justify-content: space-between; /* Space between sections */
+  align-items: center; /* Align content vertically */
+  padding: 20px; /* Padding for spacing */
+  font-size: 30px; /* Font size for the text */
+  color: black; /* Text color */
+}
+
+.title3-text {
+  flex: 1; /* Take the other 50% of the width */
+  display: flex; /* Use flex for vertical alignment within the text section */
+  flex-direction: column; /* Ensure vertical stacking of header and paragraph */
+  padding-left: 20px; /* Padding for spacing */
+}
+
+.title3-text h6 {
+  font-size: 16px; /* Font size for the text */
+  color: #4CAF50;
+}
+
+.title3-text p {
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.side-image {
+  flex: 1; /* Take 50% of the width */
+  overflow: hidden; /* Prevent overflow issues */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.side-image img {
+  width: 90%; 
+  height: 90%; 
+  object-fit: cover; 
+}
+
+
 .footer {
   background-color: #B0B0B0;
   color: black;
   padding: 20px;
+  margin-top: 30px;
   text-align: center;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact-info {
   margin-top: 10px;
+}
+
+.icon {
+  display: flex; /* Flex layout for horizontal alignment */
+  gap: 20px; /* Space between the icons */
+  justify-content: center; /* Center the icons */
+  margin-top: 20px;
 }

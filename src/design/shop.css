@@ -1,43 +1,81 @@
-.shop {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Changed to four columns */
-    grid-gap: 20px;
-  }
-  
-  .product {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centering the product within its box */
-  }
-  
-  .product img {
-    max-width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    margin-bottom: auto;
-  }
-  
-  .product h3 {
-    margin-top: auto;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .product p {
-    font-size: 16px;
-    color: #555;
-  }
-  
+ .shop-page {
+   color: #111;
+   max-width: 100%;
+   margin: 0 auto;
+   padding-top: 20px;
+ }
+
+ .header {
+  display: flex; /* Ensure flex layout for alignment */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Align content vertically */
+  padding: 20px; /* Padding for the header */
+  background: linear-gradient(to bottom left, #4CAF50, #add8e6); /* Gradient background */
+}
+
+.header-content {
+  flex: 1; /* Take 50% of the space */
+}
+
+.header-content h1 {
+  padding-left: 20px; /* Padding for text */
+  font-size: 46px;
+}
+
+.header-content p{
+  padding-left: 20px; /* Padding for text */
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.header-image {
+  flex: 1; /* Take 50% of the space */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.header-image img {
+  width: 100%; /* Ensure image fills the space */
+  height: 100%; /* Match the height */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+ .products-section {
+   background-color: white;
+   /* Standard white background for the products section */
+   padding: 20px;
+ }
+
+ .products {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   padding-top: 80px;
+   /* Changed to four columns */
+   grid-gap: 20px;
+ }
+
+ .product {
+   background-color: #fff;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   /* Centering the product within its box */
+ }
+
+ .product img {
+   max-width: 100%;
+   height: 300px;
+   border-radius: 8px;
+   margin-bottom: auto;
+ }
+
+ .product h3 {
+   margin-top: auto;
+   font-size: 18px;
+   color: #333;
+ }
+
+ .product p {
+   font-size: 16px;
+   color: #555;
+ }
