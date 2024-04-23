@@ -86,7 +86,7 @@ function Home() {
         <div className="side-image">
           {/* Image is on the left side */}
           <img
-            src="https://ezessence.com/wp-content/uploads/2023/09/pexels-photo-3735627-1024x683.jpeg"
+            src="https://media.istockphoto.com/id/1149067970/photo/many-kind-of-shampoo-and-shower-gel-bottles-and-sponge-on-the-table.jpg?s=612x612&w=0&k=20&c=nv1nY2LPazJtLwyf-i55LmlFXKfNTcVaXzXdmSlHIUo="
             alt="Side"
           />
         </div>
