@@ -1,5 +1,5 @@
 .signin-container {
-  max-width: 35%;
+  max-width: 60%;
   margin: 100px auto;
   padding: 20px;
   background-color: #fff;
@@ -21,6 +21,7 @@ input[type="password"] {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 .error {
@@ -29,7 +30,7 @@ input[type="password"] {
 }
 
 .signin-container p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .login-button {
@@ -51,7 +52,8 @@ input[type="password"] {
   text-align: center; /* Centered text */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-  width: 300px; /* Fixed button width for consistency */
+  width: 350px; /* Fixed button width for consistency */
+  font-size: 16px;
 }
 
 .login-button button:hover {

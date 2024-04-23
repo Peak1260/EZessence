@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import '../design/shop.css';
+import '../context/shop-context'
+import { ShopContext } from '../context/shop-context';
 
 // Sample product data
-const products = [
+export const products = [
   { id: 1, name: 'Construction Simulator - Day 1 Edition - PS4', price: 49.99, image: 'https://m.media-amazon.com/images/I/6172anu4b7L._AC_UY327_FMwebp_QL65_.jpg' },
   { id: 2, name: 'Babolat VS Touch Natural Gut String', price: 51.99, image: 'https://m.media-amazon.com/images/I/61-pqYJoUTL._AC_UY327_FMwebp_QL65_.jpg' },
   { id: 3, name: 'Mepilex Ag - 4" x 4" (10 x 10cm) - Box of 5', price: 51.99, image: 'https://m.media-amazon.com/images/I/81S6q9nwr3L._AC_UY327_FMwebp_QL65_.jpg' },
@@ -22,17 +24,25 @@ const products = [
 ];
 
 // Product component
-const Product = ({ id, name, price, image }) => (
-  <div className="product">
-    <img src={image} alt={name} />
-    <h3>{name}</h3>
-    <p>${price}</p>
-    <button className = "addtocart">Add To Cart</button>
-  </div>
-);
+
+export const Product = (props) => {
+  const { id, name, price, image } = props.data;
+  const { addToCart, cartItems } = useContext(ShopContext);
+
+  const cartItemCount = cartItems[id];
+
+  return (
+    <div className="product">
+      <img src={image} alt={name} />  {/* Ensure `alt` uses `name`, not `item` */}
+      <h3>{name}</h3>
+      <p>${price}</p>
+      <button className="addtocart" onClick={() => addToCart(id)}>Add to Cart {cartItemCount > 0 && <> ({cartItemCount})</>}</button>  
+    </div>
+  );
+};
 
 // Shop component
-function Shop() {
+export const Shop = () => {
   return (
     <div className="shop-page">
       <div className="header">
@@ -47,7 +57,7 @@ function Shop() {
       <div className="products-section">
         <div className="products">
           {products.map(product => (
-            <Product key={product.id} {...product} />
+            <Product data={product} />
           ))
           }
         </div>

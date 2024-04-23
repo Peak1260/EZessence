@@ -1,0 +1,82 @@
+.checkout-page {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Title Styling */
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Label Styling */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Input Styling */
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #shippingAddress {
+    display: none; /* Hide by default, controlled by JavaScript */
+  }
+  
+  /* Checkout Summary Styling */
+  .checkout-summary {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  /* Checkout Summary Individual Item */
+  .summary-item {
+    display: flex; /* Flex layout to align items */
+    align-items: center; /* Vertical alignment */
+    padding: 10px 0; /* Padding around cart items */
+    border-bottom: 1px solid #ddd; /* Border to separate items */
+  }
+  
+  /* Checkout Summary Product Image */
+  .summary-item img {
+    width: 80px; /* Fixed width for product image */
+    height: 100px; /* Fixed height for product image */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  /* Checkout Summary Text */
+  .checkout-summary p {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  
+  /* Button Styling */
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45A049;
+  }
+  

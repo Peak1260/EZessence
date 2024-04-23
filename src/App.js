@@ -4,27 +4,32 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Shop from './pages/shop';
 import Signin from './pages/signin';
 import Cart from './pages/cart';
+import Checkout from './pages/checkout'
+import { ShopContextProvider } from './context/shop-context';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        {/* Logo */}
-        <Link to="/">
-          <img src="./images/logo.png" alt="Logo" className="logo" />
-        </Link>
+    <div className="App">
+      <ShopContextProvider>
+          {/* Logo */}
+          <Link to="/">
+            <img src="./images/logo.png" alt="Logo" className="logo" />
+          </Link>
 
-        {/* Navigation */}
-        <NavigationBar />
+          {/* Navigation */}
+          <NavigationBar />
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </div>
+          {/* Routes */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+      </ShopContextProvider>
+    </div>
     </Router>
   );
 }
