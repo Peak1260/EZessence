@@ -27,6 +27,7 @@ const Product = ({ id, name, price, image }) => (
     <img src={image} alt={name} />
     <h3>{name}</h3>
     <p>${price}</p>
+    <button className = "addtocart">Add To Cart</button>
   </div>
 );
 
@@ -47,7 +48,8 @@ function Shop() {
         <div className="products">
           {products.map(product => (
             <Product key={product.id} {...product} />
-          ))}
+          ))
+          }
         </div>
       </div>
     </div>

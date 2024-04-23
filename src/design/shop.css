@@ -78,4 +78,29 @@
  .product p {
    font-size: 16px;
    color: #555;
+   margin-top: auto;
  }
+
+ .addtocart {
+  background-color: #4CAF50; /* Coral color */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  text-align: center; /* Centered text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: auto; /* Auto margin to push the button to the bottom */
+}
+
+.addtocart:hover {
+  background-color: #4C9F50; /* Darken the background on hover */
+  transform: translateY(-2px); /* Lift the button slightly on hover */
+}
+
+.addtocart:active {
+  transform: translateY(0); /* Reset the position when the button is clicked */
+}
