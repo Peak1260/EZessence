@@ -28,6 +28,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
+          <Footer />
       </ShopContextProvider>
     </div>
     </Router>
@@ -98,23 +99,27 @@ function Home() {
           <p>The delivery will vary depending on the product and the delivery location, but we ensure you that everything will be sent in a timely manner. Feel free to contact us about any questions or if the delivered item is damaged or the wrong product.</p>
         </div>
       </div>
-      {/* Footer */}
-      <footer className="footer">
-        <div className="contact-info">
-          <h3>Contact Us</h3>
-          <p>Email: ezessence16@gmail.com</p>
-          <p>Phone: +1(510)513-5593</p>
-        </div>
-        <div className="icon">
-          <img src="./images/instagram_icon.png" alt="instagram"></img>
-          <img src="./images/whatsapp_icon.png" alt="whatsapp"></img>
-          <img src="./images/pinterest_icon.png" alt="pinterest"></img>
-        </div>
-        <div className="copyright">
-          <p>Copyright @ 2024, EZessence - All Rights Reserved</p>
-        </div>
-      </footer>
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: info@ezessence.com</p>
+        <p>Phone: +1(650)318-1233</p>
+      </div>
+      <div className="icon">
+        <img src="./images/instagram_icon.png" alt="Instagram" />
+        <img src="./images/whatsapp_icon.png" alt="WhatsApp" />
+        <img src="./images/pinterest_icon.png" alt="Pinterest" />
+      </div>
+      <div className="copyright">
+        <p>Copyright 2024 EZessence. All Rights Reserved</p>
+      </div>
+    </footer>
   );
 }
 
