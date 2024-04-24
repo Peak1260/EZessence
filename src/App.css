@@ -157,3 +157,39 @@
   margin-top: 20px;
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .navigation {
+    margin-top: 50px;
+    display: block; /* Stack links vertically */
+    text-align: center; /* Center-align the links */
+  }
+
+  .navigation-link {
+    display: block; /* Each link on a new line */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .logo {
+    left: 50%;
+    transform: translateX(-50%); /* Center the logo */
+  }
+
+  .columns-container {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically */
+    justify-content: center; /* Center-align content */
+    align-items: center; /* Center-align content */
+  }
+
+  .column {
+    width: 100%; /* Full width for mobile */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+  }
+
+  .column img {
+    max-width: 80%; /* Keep image within bounds */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+}

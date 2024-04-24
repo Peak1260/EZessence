@@ -106,3 +106,57 @@
   .checkout button:hover {
     background-color: #45A049; /* Darken on hover */
   }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+  .cart {
+    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Use full width for smaller screens */
+  }
+
+  .cart h2 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .cartItem {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px; /* Adjust padding for smaller screens */
+    border-bottom: 1px solid #ddd; /* Border to separate cart items */
+  }
+
+  .cartItem img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Adjust height to fit the content */
+    margin-bottom: 10px; /* Space below the image */
+  }
+
+  .description {
+    text-align: left; /* Align text to the left */
+  }
+
+  .countHandler {
+    flex-direction: row; /* Keep buttons in a row */
+    justify-content: space-between; /* Evenly space buttons and input */
+    width: 100%; /* Use full width */
+  }
+
+  .countHandler input {
+    width: 30px; /* Smaller width for input */
+  }
+
+  .checkout {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align elements */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .checkout p {
+    font-size: 14px; /* Smaller font size for subtotal */
+  }
+
+  .checkout button {
+    padding: 8px 16px; /* Smaller padding for smaller screens */
+    margin-top: 10px; /* Space between buttons */
+  }
+}
