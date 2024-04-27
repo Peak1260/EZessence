@@ -15,7 +15,7 @@ function App() {
       <ShopContextProvider>
           {/* Logo */}
           <Link to="/">
-            <img src="./images/logo.png" alt="Logo" className="logo" />
+            <img src="/images/logo.png" alt="Logo" className="logo" />
           </Link>
 
           {/* Navigation */}
@@ -42,7 +42,7 @@ function NavigationBar() {
     <nav className="navigation">
       <Link to="/shop" className="navigation-link">Shop</Link>
       <Link to="/signin" className="navigation-link">Sign in</Link>
-      <Link to="/cart" className="navigation-link"><img src="./images/cart_icon.png" alt="cart" style={{ width: '20px' }}></img>Cart</Link>
+      <Link to="/cart" className="navigation-link"><img src="/images/cart_icon.png" alt="cart" style={{ width: '20px' }}></img>Cart</Link>
     </nav>
   );
 }
@@ -114,9 +114,9 @@ function Footer() {
         <p>Phone: +1(650)318-1233</p>
       </div>
       <div className="icon">
-        <img src="./images/instagram_icon.png" alt="Instagram" />
-        <img src="./images/whatsapp_icon.png" alt="WhatsApp" />
-        <img src="./images/pinterest_icon.png" alt="Pinterest" />
+        <img src="/images/instagram_icon.png" alt="Instagram" />
+        <img src="/images/whatsapp_icon.png" alt="WhatsApp" />
+        <img src="/images/pinterest_icon.png" alt="Pinterest" />
       </div>
       <div className="copyright">
         <p>Copyright 2024 EZessence. All Rights Reserved</p>
