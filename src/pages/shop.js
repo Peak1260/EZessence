@@ -2,8 +2,8 @@ import React, {useContext} from 'react';
 import '../design/shop.css';
 import '../context/shop-context'
 import { ShopContext } from '../context/shop-context';
+import { Link } from 'react-router-dom';
 
-// Sample product data
 export const products = [
   { id: 1, name: 'Construction Simulator - Day 1 Edition - PS4', price: 49.99, image: 'https://m.media-amazon.com/images/I/6172anu4b7L._AC_UY327_FMwebp_QL65_.jpg' },
   { id: 2, name: 'Babolat VS Touch Natural Gut String', price: 51.99, image: 'https://m.media-amazon.com/images/I/61-pqYJoUTL._AC_UY327_FMwebp_QL65_.jpg' },
@@ -33,8 +33,10 @@ export const Product = (props) => {
 
   return (
     <div className="product">
-      <img src={image} alt={name} />  {/* Ensure `alt` uses `name`, not `item` */}
+      <Link to={`/product/${id}`} style={{ textDecoration: 'none' }}>
+      <img src={image} alt={name} /> 
       <h3>{name}</h3>
+      </Link>
       <p>${price}</p>
       <button className="addtocart" onClick={() => addToCart(id)}>Add to Cart {cartItemCount > 0 && <> ({cartItemCount})</>}</button>  
     </div>
