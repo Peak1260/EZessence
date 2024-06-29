@@ -1,164 +1,155 @@
-/* Overall Cart Styling */
-
 .cart {
-    padding: 20px; /* Overall padding */
-    max-width: 800px; /* Limit the width for readability */
-    margin: 0 auto; /* Center the cart */
-    background: #f7f7f7; /* Light gray background for the cart */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    background: #f7f7f7; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-top: 20px;
     min-height: 100vh;
   }
   
-  /* Styling for Heading "Your Cart Items" */
   .cart h2 {
-    text-align: center; /* Center the text */
-    font-size: 34px; /* Larger font size for emphasis */
-    font-weight: bold; /* Bold text for emphasis */
-    color: #4CAF50; /* Dark text color for contrast */
-    padding-bottom: 10px; /* Space below the heading */
-    border-bottom: 1px solid #ddd; /* Border to separate the heading */
-    margin-bottom: 20px; /* Space below the border */
+    text-align: center; 
+    font-size: 34px; 
+    font-weight: bold; 
+    color: #4CAF50; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 20px; 
   }
   
-  /* Styling for Empty Cart Message */
   .cart h4 {
-    text-align: center; /* Center the text */
-    font-size: 16px; /* Larger font size for emphasis */
-    color: black; /* Gray text for a subdued tone */
-    padding: 30px 0; /* Padding to center the message vertically */
+    text-align: center; 
+    font-size: 16px;
+    color: black; 
+    padding: 30px 0;
   }
   
-  /* Individual Cart Items */
   .cartItem {
-    display: flex; /* Flex layout to align items */
-    align-items: center; /* Vertical alignment */
-    padding: 20px; /* Padding around cart items */
-    border-bottom: 1px solid #ddd; /* Border to separate items */
+    display: flex;
+    align-items: center; 
+    padding: 20px; 
+    border-bottom: 1px solid #ddd; 
   }
   
-  /* Product Image Styling */
   .cartItem img {
-    width: 150px; /* Fixed width for product image */
-    height: 200px; /* Fixed height for product image */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
-    margin-right: 20px; /* Space between image and text */
+    width: 150px; 
+    height: 200px;  
+    object-fit: cover;  
+    border-radius: 8px;  
+    margin-right: 20px;  
   }
   
-  /* Product Description Styling */
   .description {
-    flex: 1; /* Allow description to expand */
+    flex: 1;  
   }
   
   .description p {
-    margin: 0; /* Remove margin */
-    color: black; /* Text color */
-    font-size: 16px; /* Standard font size */
+    margin: 0; 
+    color: black;  
+    font-size: 16px;  
   }
   
-  /* Quantity and Control Button Styling */
   .countHandler {
-    display: flex; /* Flex layout for buttons and input */
-    align-items: center; /* Align elements vertically */
-    margin-top: 10px; /* Space above the count handler */
+    display: flex;  
+    align-items: center;  
+    margin-top: 10px;  
   }
   
   .countHandler button {
-    background-color: #4CAF50; /* Green for buttons */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 5px 10px; /* Padding for buttons */
-    cursor: pointer; /* Pointer cursor */
+    background-color: #4CAF50;  
+    color: white;  
+    border: none; 
+    border-radius: 5px;  
+    padding: 5px 10px;
+    cursor: pointer;  
   }
   
   .countHandler input {
-    width: 40px; /* Fixed width for input */
-    text-align: center; /* Center text */
-    border: 1px solid #ddd; /* Border for the input */
-    border-radius: 5px; /* Rounded corners */
-    margin: 0 10px; /* Space between buttons and input */
+    width: 40px;  
+    text-align: center; 
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    margin: 0 10px;  
   }
 
   .checkout {
-    display: flex; /* Flex layout */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Align elements vertically */
-    padding: 20px; /* Padding around checkout section */
-    border-top: 1px solid #ddd; /* Border to separate sections */
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;  
+    border-top: 1px solid #ddd; 
   }
   
   .checkout p {
-    font-size: 16px; /* Larger font for subtotal */
-    font-weight: bold; /* Bold text */
+    font-size: 16px;  
+    font-weight: bold;  
   }
   
   .checkout button {
-    background-color: #4CAF50; /* Green for buttons */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Pointer cursor */
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 10px 20px;  
+    border: none; 
+    border-radius: 5px; 
+    font-weight: bold;  
+    cursor: pointer; 
   }
   
   .checkout button:hover {
-    background-color: #45A049; /* Darken on hover */
+    background-color: #45A049;  
   }
 
-  /* Media query for smaller screens */
 @media (max-width: 768px) {
   .cart {
-    padding: 10px; /* Adjust padding for smaller screens */
-    max-width: 100%; /* Use full width for smaller screens */
+    padding: 10px;  
+    max-width: 100%; 
   }
 
   .cart h2 {
-    font-size: 28px; /* Adjust font size for smaller screens */
+    font-size: 28px;  
   }
 
   .cartItem {
-    flex-direction: column; /* Stack content vertically on smaller screens */
-    align-items: flex-start; /* Align items to the start */
-    padding: 10px; /* Adjust padding for smaller screens */
-    border-bottom: 1px solid #ddd; /* Border to separate cart items */
+    flex-direction: column;  
+    align-items: flex-start;  
+    padding: 10px;  
+    border-bottom: 1px solid #ddd;  
   }
 
   .cartItem img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Adjust height to fit the content */
-    margin-bottom: 10px; /* Space below the image */
+    width: 100%; 
+    height: auto;  
+    margin-bottom: 10px;  
   }
 
   .description {
-    text-align: left; /* Align text to the left */
+    text-align: left;  
   }
 
   .countHandler {
-    flex-direction: row; /* Keep buttons in a row */
-    justify-content: space-between; /* Evenly space buttons and input */
-    width: 100%; /* Use full width */
+    flex-direction: row;  
+    justify-content: space-between;  
+    width: 100%;
   }
 
   .countHandler input {
-    width: 30px; /* Smaller width for input */
+    width: 30px;  
   }
 
   .checkout {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align elements */
-    padding: 10px; /* Adjust padding */
+    flex-direction: column;  
+    align-items: center;  
+    padding: 10px;  
   }
 
   .checkout p {
-    font-size: 14px; /* Smaller font size for subtotal */
+    font-size: 14px; 
   }
 
   .checkout button {
-    padding: 8px 16px; /* Smaller padding for smaller screens */
-    margin-top: 10px; /* Space between buttons */
+    padding: 8px 16px;  
+    margin-top: 10px;  
   }
 }

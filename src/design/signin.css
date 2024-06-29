@@ -34,46 +34,46 @@ input[type="password"] {
 }
 
 .login-button {
-  display: flex; /* Arrange buttons horizontally */
-  flex-direction: column; /* Align buttons in a column */
-  align-items: center; /* Center align the buttons */
-  gap: 10px; /* Space between buttons */
-  padding: 20px; /* Padding around the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
 }
 
 .login-button button {
-  background-color: #4CAF50; /* Default green color */
-  color: white; /* White text */
-  padding: 10px 20px; /* Padding for the button */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  font-weight: bold; /* Bold text */
-  text-transform: uppercase; /* Uppercase text */
-  text-align: center; /* Centered text */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-  width: 350px; /* Fixed button width for consistency */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 350px;
   font-size: 16px;
 }
 
 .login-button button:hover {
-  background-color: #45a049; /* Darken on hover */
-  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #45a049;
+  transform: translateY(-2px);
 }
 
 .login-button button:active {
-  background-color: #388e3c; /* Darken more when clicked */
-  transform: translateY(0); /* Return to original position when clicked */
+  background-color: #388e3c;
+  transform: translateY(0);
 }
 
 .login-button button:first-child {
-  background-color: #4CAF50; /* Sign in with Email/Password button color */
+  background-color: #4CAF50;
 }
 
 .login-button button:nth-child(2) {
-  background-color: #DB4437; /* Sign in with Google button color (Google red) */
+  background-color: #DB4437;
 }
 
 .login-button button:nth-child(3) {
-  background-color: #2196F3; /* Create Account button color (blue) */
+  background-color: #2196F3;
 }
